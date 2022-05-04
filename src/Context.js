@@ -13,10 +13,21 @@ function ChangMusicProvider({ children }) {
       setSong(song);
     }
   };
+  const handleScrollIntoView = (index) => {
+    const song_active = document.querySelectorAll(".listSong-body")[index];
+    setTimeout(() => {
+      song_active.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      });
+    }, 300);
+  };
   var value = {
     DataSongs,
     song,
     handleSetSong,
+    handleScrollIntoView,
   };
   return <Songs.Provider value={value}>{children}</Songs.Provider>;
 }

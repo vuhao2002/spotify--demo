@@ -2,9 +2,11 @@ import { useContext, useState, useEffect } from "react";
 import { Songs } from "../../Context";
 import "./ListSong.css";
 export default function ListSongs() {
-  const { DataSongs, handleSetSong, song } = useContext(Songs);
+  const { DataSongs, handleSetSong, handleScrollIntoView, song } =
+    useContext(Songs);
   const [idSong, setIdSong] = useState(0);
   const handleSongClick = (index) => {
+    handleScrollIntoView(index);
     setIdSong(index);
     handleSetSong(index);
   };

@@ -4,12 +4,14 @@ import "react-h5-audio-player/lib/styles.css";
 import "./Playing.css";
 import { Songs } from "../../Context";
 export default function Playing() {
-  const { song, handleSetSong } = useContext(Songs);
+  const { song, handleSetSong, handleScrollIntoView } = useContext(Songs);
   const handleClickNext = () => {
+    handleScrollIntoView(song.id + 1);
     handleSetSong(song.id + 1);
   };
 
   const handleClickPrevious = () => {
+    handleScrollIntoView(song.id - 1);
     handleSetSong(song.id - 1);
   };
 
