@@ -1,0 +1,54 @@
+.detailSong {
+  padding: 12px 12px 12px 24px;
+}
+
+.detailSong-present {
+  color: #00bfff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  padding-left: 12px;
+}
+
+.detailSong-sleep {
+  color: gray;
+  font-size: 2.8rem;
+  padding: 0 12px;
+  line-height: 3.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.detailSong-avatar,
+.detailSong-singer {
+  display: flex;
+  align-items: center;
+}
+
+.detailSong-avatar {
+  margin-top: 64px;
+  justify-content: center;
+}
+
+.detailSong-image {
+  width: 50%;
+  border-radius: 4px;
+  max-height: 256px;
+  object-fit: cover;
+}
+
+.detailSong-singer {
+  margin-top: 16px;
+  justify-content: space-evenly;
+}
+
+.detailSong-singer__image {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.detailSong-singer__name {
+  font-size: 2rem;
+  color: #fff;
+}
