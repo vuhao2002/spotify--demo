@@ -12,6 +12,11 @@ export default function Playing() {
   const handleClickPrevious = () => {
     handleSetSong(song.id - 1);
   };
+
+  const handleLoop = () => {
+    handleSetSong(song.id);
+  };
+
   return (
     <div>
       <AudioPlayer
@@ -22,6 +27,8 @@ export default function Playing() {
         showJumpControls={false}
         onClickNext={handleClickNext}
         onClickPrevious={handleClickPrevious}
+        onEnded={handleClickNext}
+        onloop={handleLoop}
       />
     </div>
   );

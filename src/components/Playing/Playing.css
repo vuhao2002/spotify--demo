@@ -1,5 +1,7 @@
 .rhap_container.rhap_loop--off.rhap_play-status--paused.music-player,
-.rhap_container.rhap_loop--off.rhap_play-status--playing.music-player {
+.rhap_container.rhap_loop--off.rhap_play-status--playing.music-player,
+.rhap_container.rhap_loop--on.rhap_play-status--paused.music-player,
+.rhap_container.rhap_loop--on.rhap_play-status--playing.music-player {
   background-color: #0f172a;
   height: 96px;
   padding: 8px;
